@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Silkscreen';
+	src: url("/public/assets/silkscreen-regular.woff");
+}
+
+.item-list-container {
+	text-align: center;
+	font-family: 'Silkscreen', Arial, sans-serif;
+
+}
