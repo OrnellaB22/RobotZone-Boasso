@@ -1,17 +1,23 @@
 @font-face {
 	font-family: 'Silkscreen';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	src: url("./silkscreen-regular.woff");
 }
 
 .navbar {
 	font-family: 'Silkscreen';
 =======
+=======
+>>>>>>> Stashed changes
 	src: url("/public/assets/silkscreen-regular.woff");
 }
 
 .navbar {
 	font-family: 'Silkscreen', Arial, sans-serif;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	color: white;
 	background: black;
@@ -24,11 +30,17 @@
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 .links-container {
 	margin: 1rem;
 }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 .logo-container {
 	display: flex;

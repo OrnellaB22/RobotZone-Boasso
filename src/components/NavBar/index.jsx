@@ -1,13 +1,19 @@
 import React from 'react'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import './styles.css';
 
 const NavBar = () => {
 =======
+=======
+>>>>>>> Stashed changes
 import CartWidget from '../CartWidget';
 import './styles.css';
 
 const NavBar = ({categories}) => {
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	return (
 		<>
@@ -23,6 +29,10 @@ const NavBar = ({categories}) => {
 						<li><a className="navbar-link" href='#'>Almacenamiento</a></li>
 						<li><a className="navbar-link" href='#'>Notebooks</a></li>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+						<CartWidget/>
+>>>>>>> Stashed changes
 =======
 						<CartWidget/>
 >>>>>>> Stashed changes
