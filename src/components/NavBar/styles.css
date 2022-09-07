@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Silkscreen';
+	src: url("/public/assets/silkscreen-regular.woff");
+}
+
+.navbar {
+	font-family: 'Silkscreen', Arial, sans-serif;
+	color: #f3f3f3;
+	background: black;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 3px solid limegreen;
+}
+
+.links-container {
+	margin: 1rem;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-logo {
+	margin: 1rem;
+	width: 30px;
+	background-color: white;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+}
+
+.navbar-links li a {
+	margin: .5rem;
+	padding: .5rem;
+	text-decoration: none;
+	color: white;
+}

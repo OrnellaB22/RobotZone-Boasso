@@ -1,0 +1,23 @@
+.btn-group {
+	position: relative;
+	display: inline-flex;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	padding: .375rem .75rem;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.mlr05 {
+	margin: 0rem .5rem;
+}
+
+.mtb05 {
+	margin: .5rem 0rem;
+}
