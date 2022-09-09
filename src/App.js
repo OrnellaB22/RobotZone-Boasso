@@ -1,7 +1,6 @@
-import './App.css';
+import './App.css'
 import NavBar from './components/NavBar';
 import ItemListContainer from './containers/ItemListContainer';
-
 
 function App() {
   
@@ -9,9 +8,8 @@ function App() {
 
   return (
     <>
-      <NavBar
-        categories={categorias}
-      />
+      <NavBar/>
+      <div className="App"/>
       <ItemListContainer greeting={"Bienvenidos a la app!"}/>
     </>
   );

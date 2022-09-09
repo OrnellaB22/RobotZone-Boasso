@@ -5,7 +5,6 @@ import './styles.css';
 import { useState } from 'react';
 
 const NavBar = () => {
-
 	const [navColor, setNavColor] = useState("#f3f3f3");
 
 	const onChangeColor = (event) => {
@@ -20,9 +19,7 @@ const NavBar = () => {
 					<img src="/assets/logo.svg" alt="Logo" className="navbar-logo"></img>
 					<span>Robot Zone</span>
 				</div>
-				<div style= {{
-					backgroundColor: navColor
-				}}>
+				<div className="links-container">
 					<ul className="navbar-links">
 						<li><a className="navbar-link" href='#'>Componentes de PC</a></li>
 						<li><a className="navbar-link" href='#'>Periféricos</a></li>
@@ -34,7 +31,7 @@ const NavBar = () => {
 				</div>
 			</nav>
 		</>
-		)
+	)
 }
 
 export default NavBar;
