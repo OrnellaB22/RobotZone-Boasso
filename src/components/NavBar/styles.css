@@ -4,15 +4,10 @@
 }
 
 .navbar {
-	font-family: 'Silkscreen';
-	src: url("/public/assets/silkscreen-regular.woff");
-}
-
-.navbar {
 	font-family: 'Silkscreen', Arial, sans-serif;
 	color: #f3f3f3;
 	color: white;
-	background: black;
+	background-color: black;
 	width: 100%;
 	align-items: center;
 	display: flex;
@@ -39,6 +34,7 @@
 .navbar ul {
 	list-style: none;
 	display: flex;
+	align-items: center;
 }
 
 .navbar-links li a {

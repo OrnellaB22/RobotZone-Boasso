@@ -1,16 +1,14 @@
 import './App.css'
 import NavBar from './components/NavBar';
-import ItemListContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 
 function App() {
   
-  const categorias = ["Componentes de PC", "Periféricos", "Almacenamiento", "Notebooks"]
-
-  return (
+ return (
     <>
       <NavBar/>
       <div className="App"/>
-      <ItemListContainer greeting={"Bienvenidos a la app!"}/>
+      <ItemDetailContainer/>
     </>
   );
 }
