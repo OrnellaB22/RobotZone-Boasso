@@ -6,6 +6,7 @@
 	border:  1px solid lightgrey;
 	margin:  0 8px 16px;
 	display: inline-flex;
+	cursor: pointer;
 }
 
 .card-body {

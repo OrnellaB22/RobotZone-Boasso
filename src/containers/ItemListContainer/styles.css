@@ -3,7 +3,19 @@
 	src: url("/public/assets/silkscreen-regular.woff");
 }
 
+.main {
+	width: 100%;
+	height: 100%;
+	background-color: #ededed;
+	display: block;
+	padding-top: 12px;
+}
+
 .item-list-container {
 	text-align: center;
 	font-family: 'Silkscreen', Arial, sans-serif;
+	max-width: 1184px;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 10px;
 }
