@@ -20,7 +20,6 @@ const ItemDetailContainer = () => {
 		getProducts();
 	}, [productId])
 
-	console.log(productDetail);
 	return <ItemDetail product={productDetail}/>
 }
 
