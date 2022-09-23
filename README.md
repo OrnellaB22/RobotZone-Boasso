@@ -3,3 +3,6 @@
 Robot Zone es un e-commerce de partes de PC.
 
 ## Herramientas y librerías usadas
+
+### react
+### react-router-dom
