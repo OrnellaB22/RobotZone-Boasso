@@ -18,9 +18,9 @@ const NavBar = () => {
 						<li><Link to="/category/men's clothing" className="navbar-link">Men's Clothing</Link></li>
 						<li><Link to="/category/women's clothing" className="navbar-link">Women's Clothing</Link></li>
 						<li><Link to="/category/jewelery" className="navbar-link">Jewelery</Link></li>
-						<CartWidget/>
 					</ul>
 				</div>
+				<CartWidget/>
 			</nav>
 		</>
 	)

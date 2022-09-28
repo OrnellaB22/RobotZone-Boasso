@@ -1,3 +1,10 @@
 .icon {
 	color: white;
+	margin: 0 10px;
+}
+
+.cartWidget {
+	display: flex;
+	align-items: center;
+	margin: 1rem;
 }

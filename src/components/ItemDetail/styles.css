@@ -14,8 +14,6 @@
 
 .productDetailContainer {
 	font-family: 'Silkscreen', Arial, sans-serif;
-	flex-direction: row;
-	box-sizing: border-box;
 	max-width: 1184px;
 	background-color: #fff;
 	margin: 0 auto;
@@ -29,4 +27,8 @@
 
 .item__img {
 	width: 249px;
+}
+
+.item__desc {
+	font-family: 'Oxanium', Arial, sans-serif;
 }

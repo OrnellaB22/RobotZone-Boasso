@@ -5,6 +5,8 @@ export const Shop = createContext(null);
 const ShopProvider = ({children}) => {
 
 	const [cart, setCart] = useState([]);
+	const [total, setTotal] = useState(0);
+	const [cantidades, setCantidades] = useState(0);
 
 	const isInCart = (id) => {
 		return cart.some(product => product.id === id)
@@ -22,11 +24,13 @@ const ShopProvider = ({children}) => {
 				return product;
 			})
 			setCart(cartModified);
-			console.log(cartModified);
+			setTotal(total + (item.price * item.quantity));
+			setCantidades(cantidades + item.quantity);
 		} else {
 			const cartModificado = [...cart, item];
 			setCart(cartModificado);
-			console.log(cartModificado);
+			setTotal(total + (item.price * item.quantity));
+			setCantidades(cantidades + item.quantity);
 		}
 	}
 
@@ -35,7 +39,7 @@ const ShopProvider = ({children}) => {
 		if (match) {
 			const itemsRestantes = cart.filter((i) => i.id !== item.id);
 			setCart(itemsRestantes);
-			console.log(itemsRestantes);
+			setCantidades(cantidades - item.quantity);
 		}
 
 	}
@@ -43,11 +47,12 @@ const ShopProvider = ({children}) => {
 	const clearCart = () => {
 		const carritoLimpio = [];
 		setCart(carritoLimpio);
-		console.log(carritoLimpio);
+		setTotal(0);
+		setCantidades(0);
 	}
 
 	return (
-		<Shop.Provider value={{cart, addItem, clearCart, removeItem}}>
+		<Shop.Provider value={{cart, addItem, clearCart, removeItem, total, cantidades}}>
 			{children}
 		</Shop.Provider>
 	)

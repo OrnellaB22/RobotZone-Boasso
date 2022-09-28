@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Oxanium';
+	src: url("/public/assets/Oxanium-Regular.woff");
+}
+
+.productsInCart {
+	margin: 0 2rem;
+}
+
+.cartDetailContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Silkscreen', Arial, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 16px;
+	max-width: 1184px;
+}
+
+.emptyCartContainer {
+	font-family: 'Oxanium', Arial, sans-serif;
+	font-size: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 600px;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 16px;
+}
+
+.productInCart {
+	font-family: 'Oxanium', Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1rem auto;
+}
+
+.productInCartImage {
+	width: 14%;
+}
+
+.sadRobot {
+	width: 90%;
+}
