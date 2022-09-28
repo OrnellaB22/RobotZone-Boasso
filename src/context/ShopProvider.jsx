@@ -39,6 +39,7 @@ const ShopProvider = ({children}) => {
 		if (match) {
 			const itemsRestantes = cart.filter((i) => i.id !== item.id);
 			setCart(itemsRestantes);
+			setTotal(total - (item.price * item.quantity));
 			setCantidades(cantidades - item.quantity);
 		}
 
