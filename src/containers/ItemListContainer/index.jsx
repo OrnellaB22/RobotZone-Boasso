@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ItemList from '../../components/ItemList';
 import { useParams } from 'react-router-dom';
+import { db } from "../../firebase/config";
+import { collection, query, where, getDocs } from "firebase/firestore";
 import './styles.css';
 
 const ItemListContainer = ({greeting}) => {
@@ -12,16 +14,15 @@ const ItemListContainer = ({greeting}) => {
 	useEffect(()=> {
 		(async ()=> {
 			try {
-				if(categoryId){
-					const response = await fetch("https://fakestoreapi.com/products/category/" + categoryId);
-					const products = await response.json();
-					setProducts(products);
-				}
-				else {
-					const response = await fetch("https://fakestoreapi.com/products/");
-					const products = await response.json();
-					setProducts(products);
-				}
+				const q = categoryId ?
+				query(collection(db, "products"), where("category", "==", categoryId))
+				: query(collection(db, "products"));
+				const querySnapshot = await getDocs(q);
+				const productsFirebase = [];
+				querySnapshot.forEach((doc) => {
+	  			productsFirebase.push({id: doc.id, ...doc.data()})
+				});
+				setProducts(productsFirebase);
 			} catch (error) {
 				console.log(error);
 			}
