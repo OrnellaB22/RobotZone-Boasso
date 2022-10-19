@@ -33,6 +33,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
 	return (
 	<div>
+		<h3>Cantidad:</h3>
 		<div className="btn-group mtb05">		
 			<button className="btn mlr05" onClick={handleDec}>-</button>
 			<h2>{count}</h2>

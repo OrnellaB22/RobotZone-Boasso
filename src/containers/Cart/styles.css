@@ -5,11 +5,15 @@
 
 .productsInCart {
 	margin: 0 2rem;
+	width: 60%;
+}
+
+.sectionTitle {
+	width: 100%;
+	text-align: center;
 }
 
 .cartDetailContainer {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 	font-family: 'Silkscreen', Arial, sans-serif;
 	background-color: #fff;
@@ -17,6 +21,11 @@
 	border-radius: 10px;
 	padding: 16px;
 	max-width: 1184px;
+}
+
+.sectionContainer {
+	display: flex;
+	flex-direction: row;
 }
 
 .emptyCartContainer {
@@ -39,6 +48,7 @@
 	justify-content: space-between;
 	padding: 1rem;
 	margin: 1rem auto;
+	border-bottom: 1px solid lightgrey;
 }
 
 .productInCartImage {
@@ -47,4 +57,28 @@
 
 .sadRobot {
 	width: 90%;
+}
+
+.clientData {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.clientData--form--title {
+	padding-bottom: 1rem;
+}
+
+input {
+	padding: 0.5rem;
+	width: 80%;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	margin: 0.5rem;
+}
+
+.loader {
+	height: 100%;
 }

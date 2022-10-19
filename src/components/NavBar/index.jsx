@@ -14,10 +14,10 @@ const NavBar = () => {
 				</div>
 				<div className="links-container">
 					<ul className="navbar-links">
-						<li><Link to="/category/electronics" className="navbar-link">Electronics</Link></li>
-						<li><Link to="/category/men's clothing" className="navbar-link">Men's Clothing</Link></li>
-						<li><Link to="/category/women's clothing" className="navbar-link">Women's Clothing</Link></li>
-						<li><Link to="/category/jewelery" className="navbar-link">Jewelery</Link></li>
+						<li><Link to="/category/notebooks" className="navbar-link">Notebooks</Link></li>
+						<li><Link to="/category/componentesdepc" className="navbar-link">Componentes de PC</Link></li>
+						<li><Link to="/category/perifericos" className="navbar-link">Periféricos</Link></li>
+						<li><Link to="/category/almacenamiento" className="navbar-link">Almacenamiento</Link></li>
 					</ul>
 				</div>
 				<CartWidget/>

@@ -4,8 +4,17 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Oxanium';
+	src: url("/public/assets/Oxanium-Regular.woff");
+}
+
 .App {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+button {
+	font-family: 'Oxanium', Arial, sans-serif;
 }

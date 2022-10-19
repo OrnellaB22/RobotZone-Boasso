@@ -13,7 +13,7 @@ const Item = ({product}) => {
 	return (
 		<div className="card">
 			<div className="card-body">
-				<img className="item__img" src={product.image} alt="product" onClick={handleNavigate}/>
+				<img className="item__img" src={product.imagedetail} alt="product" onClick={handleNavigate}/>
 				<h3 className="card-title">{product.title}</h3>
 				<h3 className="card-title">$ {product.price}</h3>
 			</div>

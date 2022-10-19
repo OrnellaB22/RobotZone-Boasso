@@ -21,6 +21,12 @@
 	padding: 16px;
 }
 
+.productCardContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .w-100 {
 	width: 100%;
 }
@@ -30,5 +36,9 @@
 }
 
 .item__desc {
+	font-family: 'Oxanium', Arial, sans-serif;
+}
+
+h3 {
 	font-family: 'Oxanium', Arial, sans-serif;
 }

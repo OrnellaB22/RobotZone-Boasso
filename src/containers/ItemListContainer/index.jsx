@@ -32,6 +32,7 @@ const ItemListContainer = ({greeting}) => {
 	return (
 		<div className="main">
 			<div className="item-list-container">
+				{categoryId ? (<h1>{categoryId}</h1>) : (<h1>Todos los productos</h1>)}
 				<ItemList products={products}/>
 			</div>
 		</div>

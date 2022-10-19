@@ -1,6 +1,7 @@
 .icon {
 	color: white;
 	margin: 0 10px;
+	cursor: pointer;
 }
 
 .cartWidget {
