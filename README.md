@@ -6,3 +6,6 @@ Robot Zone es un e-commerce de partes de PC.
 
 ### react
 ### react-router-dom
+Para manejar routing
+### sweetalert2-react-content
+Para manejar alertas

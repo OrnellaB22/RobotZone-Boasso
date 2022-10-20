@@ -12,10 +12,6 @@ import {
 } from 'react-router-dom';
 
 function App() {
-
-  /*useEffect(() => {
-    algoritmoGuardadoAutomatico();
-  }, []) */
   
   return (
     <ShopProvider>

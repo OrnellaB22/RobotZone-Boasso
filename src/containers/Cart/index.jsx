@@ -5,6 +5,8 @@ import {Shop} from '../../context/ShopProvider';
 import ordenGenerada from '../../services/generarOrden';
 import { db } from "../../firebase/config";
 import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const Cart = () => {  
    const {removeItem, cart, clearCart, total, cantidades} = useContext(Shop);
@@ -21,8 +23,11 @@ const Cart = () => {
    })
 
    const handleBuy = async () => {
+      const name = document.getElementById("orderName").value;
+      const phone = document.getElementById("orderPhone").value;
+      const mail = document.getElementById("orderMail").value;
       const importeTotal = total;
-      const orden = ordenGenerada("Ornella", "orne@mail.com", 1234, cart, importeTotal);
+      const orden = ordenGenerada(name, phone, mail, cart, importeTotal);
 
       // Add a new document with a generated id.
       const docRef = await addDoc(collection(db, "orders"), orden);
@@ -35,6 +40,16 @@ const Cart = () => {
          });
       })
       
+      const MySwal = withReactContent(Swal)
+      MySwal.fire({
+      allowOutsideClick: false,
+        title: <p>¡Compra exitosa!</p>,
+        imageUrl: '../assets/happyRobot.jpg',
+        confirmButtonText: 'Volver a la página de inicio'
+      }).then((result) => {
+         window.location.reload(false);
+      });
+
       console.log(`Document written with ID: ${docRef.id}`);
    }
 

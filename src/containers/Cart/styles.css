@@ -82,3 +82,7 @@ input {
 .loader {
 	height: 100%;
 }
+
+.swal2-image {
+	width: 30%;
+}
